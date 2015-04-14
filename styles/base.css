@@ -1,0 +1,77 @@
+body{
+	background-image: url(../img/backg.jpg);
+	background-repeat: no-repeat;
+	width: 100%;
+}
+
+header{
+	overflow: hidden;
+	padding: 20px 0;
+	background-color: #555555;
+	opacity: 0.5;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+header > div{
+	margin: 0 auto;
+	width: 78%;
+}
+header h1{
+	background-image: url(../img/logo.jpg);
+	height: 50px;
+	float: left;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	width: 100px;
+}
+header nav{
+	float: right;
+}
+.main-menu li{
+	margin-top: 25px;
+	float: right;
+	padding: 0 10px;
+	text-align: center;
+	width: auto; 
+	list-style-type: none;
+	border-right: 1px solid black;
+
+}
+
+.main-menu li a{
+	text-decoration: none;
+	color: white;
+}
+	.main-menu{
+		text-decoration: none;
+		color: black;
+	}
+
+.main-pic{
+	text-align: center;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.main-pic img{
+	/*margin: 0 auto;*/
+	width: 100%;
+	/*height: 600px;*/
+}
+.second-nav{
+	float: left;
+	overflow: hidden;
+
+}
+	.second-menu li{
+		
+		float: left;
+		text-align: center;
+		width: 125px;
+		font-size: 14px;
+		list-style-type: none;
+		padding: 40px 0;
+		border: 1px solid black;
+		background-color: white;
+	}
+
