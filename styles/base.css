@@ -50,8 +50,8 @@ header nav{
 
 .main-pic{
 	text-align: center;
-	margin-left: 10%;
-	margin-right: 10%;
+	/*margin-left: 10%;
+	margin-right: 10%;*/
 }
 .main-pic img{
 	/*margin: 0 auto;*/
@@ -61,27 +61,24 @@ header nav{
 .second-menu{
 	margin: 0;
 	padding: 0;
-	margin-right: 10%;
-	margin-left: 10%;
-	
+	/*margin-right: 10%;
+	margin-left: 10%;*/
 }
 .second-nav{
-	margin: 0;
+	margin-left: 0px;
 	padding: 0;
 }
 	.second-nav li{
-		
-		float: left;
+		/*float: left;*/
 		text-align: center;
-		min-width: 120px;
-		display: inline;
-		font-size: 14px;
-		padding: 2% 0;
+		/*min-width: 120px;*/
+		/*display: inline;*/
+		font-size: 11px;
+		/* padding: 2% 0; */
 		border: 1px solid black;
 		background-color: #0652ff;
 		list-style-type: none;
-
-
+		line-height: 4em;
 	}
 	.second-nav li a{
 		text-decoration: none;
