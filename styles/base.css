@@ -3,14 +3,16 @@ body{
 	background-repeat: no-repeat;
 	width: 100%;
 }
+.main-box{
+	margin-left: 10%;
+	margin-right: 10%;
 
+}
 header{
 	overflow: hidden;
 	padding: 20px 0;
 	background-color: #555555;
-	opacity: 0.5;
-	margin-left: 10%;
-	margin-right: 10%;
+	opacity: 0.5;	
 }
 header > div{
 	margin: 0 auto;
@@ -43,32 +45,14 @@ header nav{
 	text-decoration: none;
 	color: white;
 }
-	.main-menu{
-		text-decoration: none;
-		color: black;
-	}
 
-.main-pic{
-	text-align: center;
-	margin-left: 10%;
-	margin-right: 10%;
-}
 .main-pic img{
-	/*margin: 0 auto;*/
 	width: 100%;
-	/*height: 600px;*/
+	
 }
 
 		/* =======second menu =========== */
 
-.second-menu{
-	margin-right: 10%;
-	margin-left: 10%;
-<<<<<<< Updated upstream
-=======
-	
->>>>>>> Stashed changes
-}
 .second-nav{
 	margin: 0;
 	padding: 0;
@@ -90,4 +74,21 @@ header nav{
 	.second-nav li a{
 		text-decoration: none;
 		color: white;
+	}
+
+/*======= vehicle container ===========*/
+
+	.vehicle img{
+		padding: 10px 10px 0 0;
+		
+	}
+	.white-box{
+		background-color:white;
+	}
+
+	@media (min-width: 1200px){
+		.second-nav li{
+		width: 12.5%;
+		}
+
 	}
