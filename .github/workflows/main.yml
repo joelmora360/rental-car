@@ -14,11 +14,10 @@ jobs:
        uses: actions/checkout@v2
        
      - name: rsync deployments
-       uses: burnett01/rsync-deployments@5.2
+       uses: appleboy/ssh-action@master
        with:
-        switches: -avzr --delete
-        remote_path: "/home/dldservicio"
-        remote_host: "38.7.129.13"
-        remote_user: "dldservicio"
-        remote_key: ${{ secrets.DEPLOY_KEY }}
-        remote_key_pass: "dldservicio"
+        script: "cd /home/dldservicio/rental-car && git pull"
+        host: "38.7.129.13"
+        username: "dldservicio"
+        key: ${{ secrets.DEPLOY_KEY }}
+        passphrase: "dldservicio"
