@@ -21,5 +21,3 @@ jobs:
         remote_host: "38.7.129.13"
         remote_user: "dldservicio"
         remote_password: ${{ secrets.DEPLOY_PASSWORD }}
-        remote_key: ${{ secrets.DEPLOY_KEY }}
-        remote_key_pass: "dldservicio"
