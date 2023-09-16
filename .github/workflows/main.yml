@@ -1,0 +1,25 @@
+name: TestCD
+
+on:
+  push:
+    branches: [ "master", "dev" ]
+  pull_request:
+    branches: [ "master", "dev" ]
+
+jobs:
+  deploy:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Checkout code
+       uses: actions/checkout@v2
+       
+     - name: rsync deployments
+       uses: burnett01/rsync-deployments@5.2
+       with:
+        switches: -avzr --delete
+        remote_path: "/home/dldservicio"
+        remote_host: "38.7.129.13"
+        remote_user: "dldservicio"
+        remote_password: ${{ secrets.DEPLOY_PASSWORD }}
+        remote_key: ${{ secrets.DEPLOY_KEY }}
+        remote_key_pass: "dldservicio"
