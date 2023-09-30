@@ -10,14 +10,10 @@ jobs:
   deploy:
    runs-on: ubuntu-latest
    steps:
-     - name: Checkout code
-       uses: actions/checkout@v2
-       
-     - name: rsync deployments
+     - name: elde ploy
        uses: appleboy/ssh-action@master
        with:
         script: "cd /home/dldservicio/rental-car && git pull"
         host: "38.7.129.13"
-        username: "dldservicio"
-        key: ${{ secrets.DEPLOY_KEY }}
-        passphrase: "dldservicio"
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
