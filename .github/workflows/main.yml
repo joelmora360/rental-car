@@ -10,7 +10,7 @@ jobs:
   deploy:
    runs-on: ubuntu-latest
    steps:
-     - name: elde ploy
+     - name: elde ploy 5
        uses: appleboy/ssh-action@master
        with:
         script: "cd /home/dldservicio/rental-car && git pull"
